@@ -1,0 +1,157 @@
+// ============================================
+// COLORS
+// ============================================
+
+// Primary Colors
+$color-primary: rgba(185, 39, 112, 1); // #B92770 - Pink/Magenta
+$color-white: rgba(255, 255, 255, 1); // #FFFFFF
+$color-black: rgba(0, 0, 0, 1); // #000000
+
+// Secondary Colors
+$color-grey-dark: rgba(80, 78, 74, 1); // #504E4A
+$color-grey-medium: rgba(114, 113, 116, 1); // #727174
+$color-grey-light: rgba(231, 232, 233, 1); // #E7E8E9
+
+// Overlay & Shadow
+$color-overlay: rgba(0, 0, 0, 0.35);
+$shadow-primary: 0px 20px 80px 0px rgba(193, 199, 212, 0.7);
+
+// Semantic Colors (for better naming)
+$color-text-primary: $color-black;
+$color-text-secondary: $color-grey-medium;
+$color-text-light: $color-grey-dark;
+$color-background: $color-white;
+$color-background-light: $color-grey-light;
+$color-accent: $color-primary;
+
+// ============================================
+// TYPOGRAPHY
+// ============================================
+
+// Font Families
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Helvetica Neue', Arial, sans-serif;
+$font-tertiary: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Font Sizes
+$font-size-h1: 50px;
+$font-size-h2: 40px;
+$font-size-h3: 30px;
+$font-size-large: 19px;
+$font-size-button: 18px;
+$font-size-base: 17px;
+$font-size-small: 15px;
+
+// Line Heights
+$line-height-tight: 100%;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.75;
+
+// Letter Spacing
+$letter-spacing-normal: 0%;
+$letter-spacing-wide: 0.05em;
+
+// ============================================
+// SPACING
+// ============================================
+
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
+$spacing-xxl: 64px;
+$spacing-xxxl: 96px;
+
+// ============================================
+// BREAKPOINTS
+// ============================================
+
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1440px;
+
+// Breakpoint Map (для використання з mixins)
+$breakpoints: (
+  'mobile': $breakpoint-mobile,
+  'tablet': $breakpoint-tablet,
+  'desktop': $breakpoint-desktop
+);
+
+// ============================================
+// LAYOUT
+// ============================================
+
+$container-max-width: 1440px;
+$container-padding: $spacing-md;
+
+$header-height: 80px;
+$footer-height: auto;
+
+// Z-index layers
+$z-index-dropdown: 100;
+$z-index-sticky: 200;
+$z-index-modal-backdrop: 900;
+$z-index-modal: 1000;
+$z-index-tooltip: 1100;
+
+// ============================================
+// TRANSITIONS
+// ============================================
+
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// ============================================
+// BORDERS & RADIUS
+// ============================================
+
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-round: 50%;
+
+$border-width: 1px;
+$border-color: $color-grey-light;
+
+// ============================================
+// BUTTONS
+// ============================================
+
+$button-padding-vertical: 12px;
+$button-padding-horizontal: 24px;
+$button-border-radius: $border-radius-md;
+
+// ============================================
+// FORMS
+// ============================================
+
+$input-height: 48px;
+$input-padding: $spacing-sm;
+$input-border-radius: $border-radius-sm;
+$input-border-color: $color-grey-light;
+$input-focus-color: $color-primary;
+
+// ============================================
+// GRID
+// ============================================
+
+$grid-columns: 12;
+$grid-gutter: $spacing-md;
+
+// ============================================
+// SHADOWS
+// ============================================
+
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+$shadow-lg: $shadow-primary;
+$shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.16);

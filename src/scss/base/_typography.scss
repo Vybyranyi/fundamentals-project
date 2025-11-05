@@ -1,0 +1,90 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+h1,
+.h1 {
+  font-family: $font-primary;
+  font-weight: $font-weight-black;
+  font-size: $font-size-h1;
+  line-height: $line-height-tight;
+  letter-spacing: $letter-spacing-normal;
+  margin-bottom: $spacing-md;
+  
+  @include respond-to('mobile') {
+    font-size: 36px;
+  }
+}
+
+h2,
+.h2 {
+  font-family: $font-primary;
+  font-weight: $font-weight-black;
+  font-size: $font-size-h2;
+  line-height: $line-height-tight;
+  letter-spacing: $letter-spacing-normal;
+  margin-bottom: $spacing-md;
+  
+  @include respond-to('mobile') {
+    font-size: 30px;
+  }
+}
+
+h3,
+.h3 {
+  font-family: $font-primary;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-h3;
+  line-height: $line-height-tight;
+  letter-spacing: $letter-spacing-normal;
+  margin-bottom: $spacing-sm;
+  
+  @include respond-to('mobile') {
+    font-size: 24px;
+  }
+}
+
+p,
+.body-text {
+  font-family: $font-primary;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-base;
+  line-height: $line-height-normal;
+  letter-spacing: $letter-spacing-normal;
+  margin-bottom: $spacing-sm;
+}
+
+.text-large {
+  font-family: $font-primary;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-large;
+  line-height: $line-height-tight;
+}
+
+.text-bold {
+  font-family: $font-primary;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-base;
+  line-height: $line-height-tight;
+}
+
+.text-small {
+  font-family: $font-secondary;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-small;
+  line-height: $line-height-tight;
+}
+
+.text-small-bold {
+  font-family: $font-secondary;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-small;
+  line-height: $line-height-tight;
+}
+
+// SF Pro variant
+.text-sf-pro {
+  font-family: $font-tertiary;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-base;
+  line-height: $line-height-tight;
+}

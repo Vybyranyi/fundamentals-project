@@ -1,0 +1,30 @@
+{
+  "port": 3000,
+  "server": {
+    "baseDir": "./",
+    "index": "index.html",
+    "routes": {
+      "/": "./"
+    }
+  },
+  "files": [
+    "dist/css/**/*.css",
+    "src/js/**/*.js",
+    "src/*.html"
+  ],
+  "watchOptions": {
+    "ignoreInitial": true,
+    "ignored": [
+      "node_modules/**",
+      "dist/**/*.map",
+      ".git/**",
+      "*.json",
+      "*.md"
+    ]
+  },
+  "open": true,
+  "notify": false,
+  "ui": false,
+  "logLevel": "info",
+  "reloadDebounce": 300
+}
