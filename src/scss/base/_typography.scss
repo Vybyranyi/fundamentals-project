@@ -8,7 +8,6 @@ h1,
   font-size: $font-size-h1;
   line-height: $line-height-tight;
   letter-spacing: $letter-spacing-normal;
-  margin-bottom: $spacing-md;
   
   @include respond-to('mobile') {
     font-size: 36px;
@@ -36,7 +35,6 @@ h3,
   font-size: $font-size-h3;
   line-height: $line-height-tight;
   letter-spacing: $letter-spacing-normal;
-  margin-bottom: $spacing-sm;
   
   @include respond-to('mobile') {
     font-size: 24px;
@@ -50,7 +48,6 @@ p,
   font-size: $font-size-base;
   line-height: $line-height-normal;
   letter-spacing: $letter-spacing-normal;
-  margin-bottom: $spacing-sm;
 }
 
 .text-large {
