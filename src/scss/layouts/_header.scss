@@ -1,0 +1,66 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+header {
+    background-color: $color-white;
+    position: sticky;
+    top: 0;
+    z-index: $z-index-sticky;
+
+    .header-content {
+        @include container;
+        padding-top: $spacing-xl;
+        padding-bottom: $spacing-md;
+
+        .top-section {
+            @include flex-between;
+            align-items: end;
+            padding-bottom: 42px;
+            border-bottom: $border-width solid $color-grey-light;
+            margin-bottom: $spacing-lg;
+
+            .hesder-social-media {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                padding-bottom: 13px;
+            }
+
+            .header-logo-section {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+
+                >img {
+                    background-color: $color-primary;
+                    padding: 3px 2px;
+                    border-radius: 13px;
+                    margin-bottom: 9px;
+                }
+
+                >h3 {
+                    color: $color-primary;
+                }
+            }
+
+            .hesder-user-section {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+            }
+        }
+
+        .header-nav {
+            display: flex;
+            gap: $spacing-lg;
+            align-items: center;
+            justify-content: center;
+
+            .droplist {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+            }
+        }
+    }
+}
